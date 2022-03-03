@@ -1,8 +1,9 @@
 import numpy as np
 import cv2
 
-#Input the name of the file that we want to operate on regions of interest (ROI)
-filename = input("Please enter filename: ")
+#Pass the name of the file that we want to operate on regions of interest (ROI)
+#We write Lenna.bmp because we are given the Lenna.bmp image
+filename = "Lenna.bmp"
 
 #Read the file or image in this case
 img = cv2.imread(filename, -1)
