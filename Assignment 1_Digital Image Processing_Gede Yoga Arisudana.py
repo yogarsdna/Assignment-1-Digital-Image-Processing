@@ -18,8 +18,8 @@ ROI_nr, ROI_nc = eval(input("Enter (rows, columns) for ROI: "))
 ROI = img[ROI_x: ROI_x + ROI_nr, ROI_y: ROI_y + ROI_nc]
 
 #Show the image that have been operated on regions of interest (ROI)
-#With waitKey function the image will remain open for 10000 milliseconds 
-#After 10000 milliseconds the image will be close because destroyAllWindows function will close the opened windows and in this case the opened image
+#With the 0 passed in the argument in waitKey function, the image will remain open until any key is pressed
+#Using destroyAllWindows function, we can close the window that previously open the image
 cv2.imshow("ROI", ROI)
-cv2.waitKey(10000)
+cv2.waitKey(0)
 cv2.destroyAllWindows()
